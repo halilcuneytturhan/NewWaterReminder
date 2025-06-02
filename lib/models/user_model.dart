@@ -3,14 +3,14 @@ class UserModel {
   final String username;
   final String password;
   final double dailyGoal;
-  final double consumedWater; // <-- EKLEDİK
+  final double consumedWater;
 
   UserModel({
     this.id,
     required this.username,
     required this.password,
     required this.dailyGoal,
-    this.consumedWater = 0.0, // <-- EKLEDİK
+    this.consumedWater = 0.0,
   });
 
   Map<String, dynamic> toMap() {
@@ -19,7 +19,7 @@ class UserModel {
       'username': username,
       'password': password,
       'dailyGoal': dailyGoal,
-      'consumedWater': consumedWater, // <-- EKLEDİK
+      'consumedWater': consumedWater,
     };
   }
 
@@ -29,7 +29,7 @@ class UserModel {
       username: map['username'],
       password: map['password'],
       dailyGoal: map['dailyGoal'],
-      consumedWater: map['consumedWater'] ?? 0.0, // <-- EKLEDİK
+      consumedWater: map['consumedWater'] ?? 0.0,
     );
   }
 }
