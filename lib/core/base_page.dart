@@ -5,7 +5,7 @@ import 'drawer_menu.dart';
 class BasePage extends StatelessWidget {
   final String title;
   final Widget content;
-  final String username; // 🔥 yeni eklendi
+  final String username;
 
   const BasePage({
     super.key,
@@ -18,7 +18,7 @@ class BasePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar(title: title),
-      drawer: DrawerMenu(username: username), // 👈 düzeltildi
+      drawer: DrawerMenu(username: username),
       body: content,
     );
   }
