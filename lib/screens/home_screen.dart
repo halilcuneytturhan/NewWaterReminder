@@ -3,7 +3,7 @@ import 'dart:async';
 import '../db/user_db.dart';
 import '../models/user_model.dart';
 import 'profile_screen.dart';
-import 'login_screen.dart'; // 👈 ÇIKIŞ için eklendi
+import 'login_screen.dart';
 import '../main.dart';
 
 class HomeScreen extends StatefulWidget {
