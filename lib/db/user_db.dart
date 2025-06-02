@@ -8,7 +8,6 @@ class UserDB {
 
   UserDB._init();
 
-  // ✔ Getter ismi 'db' yapıldı, çakışma yok
   Future<Database> get db async {
     if (_database != null) return _database!;
     _database = await _initDB('users.db');
